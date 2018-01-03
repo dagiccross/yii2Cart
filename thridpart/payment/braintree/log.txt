@@ -1,0 +1,308 @@
+Log date：20170522043326
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=gxdwbwqs, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 03:33:19 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=378282, last4=0005, cardType=American Express, expirationMonth=01, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=01/2018, maskedNumber=378282******0005], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 05:23:41
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=9v6bc97y, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 04:23:35 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=378282, last4=0005, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=378282******0005], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 07:30:42
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=jcccr45r, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 06:30:37 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=555555, last4=4444, cardType=MasterCard, expirationMonth=03, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/mastercard.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=03/2019, maskedNumber=555555******4444], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 07:44:43
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=r8pjfkrc, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 06:44:38 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=400551, last4=0004, cardType=Visa, expirationMonth=02, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=sandbox, prepaid=No, healthcare=Unknown, debit=Yes, durbinRegulated=Yes, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2019, maskedNumber=400551******0004], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 07:49:48
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=1aq8mhcm, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 06:49:44 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=400934, last4=1881, cardType=Visa, expirationMonth=03, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=03/2019, maskedNumber=400934******1881], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 07:53:55
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=9p5er0sc, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 06:53:49 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=353011, last4=0000, cardType=JCB, expirationMonth=04, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/jcb.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=04/2018, maskedNumber=353011******0000], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 08:07:16
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=n6b24gyn, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 07:07:11 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=353011, last4=0000, cardType=JCB, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/jcb.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=353011******0000], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 08:58:22
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=22grz9wy, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 07:58:16 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=601111, last4=1117, cardType=Discover, expirationMonth=06, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/discover.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=06/2018, maskedNumber=601111******1117], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 09:00:18
+BRAINTREE Sandbox: 
+Transaction init falid.
+Error! Code: 1024 Undefined property on Braintree\Result\Error: _attributes File: /home/milpohosting/public_html/thridpart/payment/braintree/lib/Braintree/Base.php Line: 47
+Info! #0 [internal function]: yii\base\ErrorHandler->handleError(1024, 'Undefined prope...', '/home/milpohost...', 47, Array)
+#1 /home/milpohosting/public_html/thridpart/payment/braintree/lib/Braintree/Base.php(47): trigger_error('Undefined prope...', 1024)
+#2 /home/milpohosting/public_html/thridpart/payment/braintree/Braintree.php(130): Braintree\Base->__get('_attributes')
+#3 /home/milpohosting/public_html/frontend/controllers/OrderController.php(102): thridpart\payment\braintree\Braintree->doReturn()
+#4 [internal function]: frontend\controllers\OrderController->actionReturn()
+#5 /home/milpohosting/public_html/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /home/milpohosting/public_html/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 /home/milpohosting/public_html/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('return', Array)
+#8 /home/milpohosting/public_html/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('order/return', Array)
+#9 /home/milpohosting/public_html/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /home/milpohosting/public_html/index.php(45): yii\base\Application->run()
+#11 {main}
+
+
+Log date：2017-05-22 09:08:44
+BRAINTREE Sandbox: 
+1 total error(s)
+Error! 91569. paymentMethodNonce does not contain a valid payment instrument type.
+Braintree\Result\Error[errors=[Braintree\Error\ValidationErrorCollection/errors:[( )]], params=transaction=type=sale, amount=0.01, paymentMethodNonce=21a53ce5-80a2-0dbe-651d-e11c33c241fe, orderId=, options=submitForSettlement=false, customer=email=grace@inspirr.com, phone=, message=payment_method_nonce does not contain a valid payment instrument type., creditCardVerification=, transaction=, subscription=, merchantAccount=, verification=]
+
+
+Log date：2017-05-22 09:10:01
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=86db90pb, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 08:09:57 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=555555, last4=4444, cardType=MasterCard, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/mastercard.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=555555******4444], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 09:23:52
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=abh9g3a4, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 08:23:48 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=353011, last4=0000, cardType=JCB, expirationMonth=03, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/jcb.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=03/2018, maskedNumber=353011******0000], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 10:11:59
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=m7xhhhsa, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 09:11:54 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=353011, last4=0000, cardType=JCB, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/jcb.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=353011******0000], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 10:13:16
+BRAINTREE Sandbox: 
+1 total error(s)
+Error! 91569. paymentMethodNonce does not contain a valid payment instrument type.
+Braintree\Result\Error[errors=[Braintree\Error\ValidationErrorCollection/errors:[( )]], params=transaction=type=sale, amount=0.01, paymentMethodNonce=8d0f1631-dfd9-0cf0-6da3-6269cc37f5d4, orderId=, options=submitForSettlement=false, customer=email=grace@inspirr.com, phone=, message=payment_method_nonce does not contain a valid payment instrument type., creditCardVerification=, transaction=, subscription=, merchantAccount=, verification=]
+
+
+Log date：2017-05-22 10:13:23
+BRAINTREE Sandbox: 
+1 total error(s)
+Error! 91569. paymentMethodNonce does not contain a valid payment instrument type.
+Braintree\Result\Error[errors=[Braintree\Error\ValidationErrorCollection/errors:[( )]], params=transaction=type=sale, amount=0.01, paymentMethodNonce=8d0f1631-dfd9-0cf0-6da3-6269cc37f5d4, orderId=, options=submitForSettlement=false, customer=email=grace@inspirr.com, phone=, message=payment_method_nonce does not contain a valid payment instrument type., creditCardVerification=, transaction=, subscription=, merchantAccount=, verification=]
+
+
+Log date：2017-05-22 10:13:47
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=rmedxe2t, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 09:13:43 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=400934, last4=1881, cardType=Visa, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=400934******1881], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 10:22:14
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=597bp80j, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 09:22:09 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=378282, last4=0005, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=378282******0005], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 10:37:17
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=mdjvxgpw, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 09:37:10 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=378282, last4=0005, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=378282******0005], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 10:39:10
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=89e86bg8, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 09:39:06 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=601111, last4=1117, cardType=Discover, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/discover.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=601111******1117], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 10:54:54
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=38p735bn, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 09:54:49 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=371449, last4=8431, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=371449******8431], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 10:56:05
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=8t54hvr0, type=sale, amount=0.01, status=authorized, createdAt=Monday, 22-May-17 09:56:01 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=371449, last4=8431, cardType=American Express, expirationMonth=03, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=03/2018, maskedNumber=371449******8431], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-05-22 11:00:56
+BRAINTREE: 
+Error! 2038. Processor Declined
+Braintree\Result\Error[errors=, params=transaction=type=sale, amount=0.01, paymentMethodNonce=d489da1e-9c0c-05ac-2a67-b95ae3a8b913, orderId=, options=submitForSettlement=false, customer=email=grace@inspirr.com, phone=, message=Processor Declined, transaction=Braintree\Transaction[id=363437zq, type=sale, amount=0.01, status=processor_declined, createdAt=Monday, 22-May-17 10:00:54 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=371449, last4=8431, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=production, prepaid=No, healthcare=Unknown, debit=No, durbinRegulated=No, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=USA, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=371449******8431], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]], creditCardVerification=, subscription=, merchantAccount=, verification=]
+
+
+Log date：2017-05-22 11:02:50
+BRAINTREE: 
+Error! 2038. Processor Declined
+Braintree\Result\Error[errors=, params=transaction=type=sale, amount=0.01, paymentMethodNonce=cfa5eeb5-69cd-0145-2ca5-816a7a7761dd, orderId=, options=submitForSettlement=false, customer=email=grace@inspirr.com, phone=, message=Processor Declined, transaction=Braintree\Transaction[id=1s3r481e, type=sale, amount=0.01, status=processor_declined, createdAt=Monday, 22-May-17 10:02:49 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=555555, last4=4444, cardType=MasterCard, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/mastercard.png?environment=production, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=555555******4444], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]], creditCardVerification=, subscription=, merchantAccount=, verification=]
+
+
+Log date：2017-05-22 11:02:58
+BRAINTREE: 
+1 total error(s)
+Error! 91564. Cannot use a paymentMethodNonce more than once.
+Braintree\Result\Error[errors=[Braintree\Error\ValidationErrorCollection/errors:[( )]], params=transaction=type=sale, amount=0.01, paymentMethodNonce=cfa5eeb5-69cd-0145-2ca5-816a7a7761dd, orderId=, options=submitForSettlement=false, customer=email=grace@inspirr.com, phone=, message=Cannot use a payment_method_nonce more than once., creditCardVerification=, transaction=, subscription=, merchantAccount=, verification=]
+
+
+Log date：2017-05-22 11:04:02
+BRAINTREE: 
+Error! 2038. Processor Declined
+Braintree\Result\Error[errors=, params=transaction=type=sale, amount=0.01, paymentMethodNonce=ce559599-0197-09d0-25de-9611317519de, orderId=, options=submitForSettlement=false, customer=email=grace@inspirr.com, phone=, message=Processor Declined, transaction=Braintree\Transaction[id=3p90yg7r, type=sale, amount=0.01, status=processor_declined, createdAt=Monday, 22-May-17 10:04:01 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=371449, last4=8431, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=production, prepaid=No, healthcare=Unknown, debit=No, durbinRegulated=No, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=USA, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=371449******8431], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]], creditCardVerification=, subscription=, merchantAccount=, verification=]
+
+
+Log date：2017-05-27 11:41:06
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=nde4k93w, type=sale, amount=0.01, status=authorized, createdAt=Saturday, 27-May-17 10:41:00 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=465943, last4=7820, cardType=Visa, expirationMonth=11, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=HSBC Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=11/2019, maskedNumber=465943******7820], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=, fax=]]]
+
+
+Log date：2017-05-27 11:55:34
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=cp6df8y5, type=sale, amount=0.01, status=authorized, createdAt=Saturday, 27-May-17 10:55:29 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=465943, last4=7820, cardType=Visa, expirationMonth=11, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=HSBC Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=11/2019, maskedNumber=465943******7820], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=, fax=]]]
+
+
+Log date：2017-05-30 11:55:38
+BRAINTREE: 
+Error! 2038. Processor Declined
+Braintree\Result\Error[errors=, params=transaction=type=sale, amount=0.01, paymentMethodNonce=c3b5ed4d-e850-0b72-289f-815c659538be, orderId=, options=submitForSettlement=false, customer=email=hon@milpo.co.uk, phone=, message=Processor Declined, transaction=Braintree\Transaction[id=g8kzj90a, type=sale, amount=0.01, status=processor_declined, createdAt=Tuesday, 30-May-17 10:55:37 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=411111, last4=1111, cardType=Visa, expirationMonth=12, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=12/2018, maskedNumber=411111******1111], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=hon@milpo.co.uk, website=, phone=, fax=]], creditCardVerification=, subscription=, merchantAccount=, verification=]
+
+
+Log date：2017-05-30 11:55:47
+BRAINTREE: 
+1 total error(s)
+Error! 91564. Cannot use a paymentMethodNonce more than once.
+Braintree\Result\Error[errors=[Braintree\Error\ValidationErrorCollection/errors:[( )]], params=transaction=type=sale, amount=0.01, paymentMethodNonce=c3b5ed4d-e850-0b72-289f-815c659538be, orderId=, options=submitForSettlement=false, customer=email=hon@milpo.co.uk, phone=, message=Cannot use a payment_method_nonce more than once., creditCardVerification=, transaction=, subscription=, merchantAccount=, verification=]
+
+
+Log date：2017-05-30 12:23:25
+BRAINTREE: 
+Error! 2000. Do Not Honor
+Braintree\Result\Error[errors=, params=transaction=type=sale, amount=0.01, paymentMethodNonce=5e998c8d-3156-0329-2ae9-7ee587ebc275, orderId=, options=submitForSettlement=false, customer=email=hon@milpo.co.uk, phone=, message=Do Not Honor, transaction=Braintree\Transaction[id=ppthxmrd, type=sale, amount=0.01, status=processor_declined, createdAt=Tuesday, 30-May-17 11:23:25 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=465858, last4=4209, cardType=Visa, expirationMonth=06, expirationYear=2017, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=Barclays Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=06/2017, maskedNumber=465858******4209], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=hon@milpo.co.uk, website=, phone=, fax=]], creditCardVerification=, subscription=, merchantAccount=, verification=]
+
+
+Log date：2017-06-08 12:04:07
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=h7ccgang, type=sale, amount=0.01, status=submitted_for_settlement, createdAt=Thursday, 08-Jun-17 11:04:00 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=492181, last4=9743, cardType=Visa, expirationMonth=09, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=Lloyds Bank Plc, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=09/2019, maskedNumber=492181******9743], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=, fax=]]]
+
+
+Log date：2017-06-09 01:46:21
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=ebp65dkn, type=sale, amount=0.01, status=submitted_for_settlement, createdAt=Friday, 09-Jun-17 00:46:15 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=475129, last4=1246, cardType=Visa, expirationMonth=04, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=National Westminster Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=04/2019, maskedNumber=475129******1246], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=, fax=]]]
+
+
+Log date：2017-06-16 05:29:00
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=hj4vk8g2, type=sale, amount=0.01, status=submitted_for_settlement, createdAt=Friday, 16-Jun-17 04:28:52 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=378282, last4=0005, cardType=American Express, expirationMonth=01, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=01/2018, maskedNumber=378282******0005], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-06-16 07:16:06
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=81v3rebq, type=sale, amount=0.01, status=submitted_for_settlement, createdAt=Friday, 16-Jun-17 06:15:57 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=601111, last4=1117, cardType=Discover, expirationMonth=01, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/discover.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=01/2018, maskedNumber=601111******1117], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-06-16 07:31:25
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=1xq6r0xy, type=sale, amount=0.01, status=submitted_for_settlement, createdAt=Friday, 16-Jun-17 06:31:18 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=371449, last4=8431, cardType=American Express, expirationMonth=01, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=01/2018, maskedNumber=371449******8431], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=, fax=]]]
+
+
+Log date：2017-06-16 19:47:54
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=mbknjqv3, type=sale, amount=0.01, status=submitted_for_settlement, createdAt=Friday, 16-Jun-17 18:47:48 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=465858, last4=4217, cardType=Visa, expirationMonth=05, expirationYear=2020, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=Barclays Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=05/2020, maskedNumber=465858******4217], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=hon@milpo.co.uk, website=, phone=, fax=]]]
+
+
+Log date：2017-06-21 16:39:41
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=4jnypet7, type=sale, amount=0.05, status=submitted_for_settlement, createdAt=Wednesday, 21-Jun-17 15:39:35 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=465858, last4=4217, cardType=Visa, expirationMonth=05, expirationYear=2020, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=Barclays Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=05/2020, maskedNumber=465858******4217], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Hon, lastName=, company=, email=hon@milpo.co.uk, website=, phone=07450890888, fax=]]]
+
+
+Log date：2017-06-22 02:40:06
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=peeswyet, type=sale, amount=0.02, status=submitted_for_settlement, createdAt=Thursday, 22-Jun-17 01:39:57 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=378282, last4=0005, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=378282******0005], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=03215484136, fax=]]]
+
+
+Log date：2017-06-22 02:48:48
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=rsnqb2fn, type=sale, amount=0.08, status=submitted_for_settlement, createdAt=Thursday, 22-Jun-17 01:48:40 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=378282, last4=0005, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=378282******0005], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=10478675787, fax=]]]
+
+
+Log date：2017-06-22 12:47:41
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=hhw5cnpm, type=sale, amount=0.11, status=submitted_for_settlement, createdAt=Thursday, 22-Jun-17 11:47:35 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=465858, last4=4217, cardType=Visa, expirationMonth=05, expirationYear=2020, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=Barclays Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=05/2020, maskedNumber=465858******4217], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Hon, lastName=, company=, email=hon@milpo.co.uk, website=, phone=07450890888, fax=]]]
+
+
+Log date：2017-06-22 12:49:54
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=ch7hg85x, type=sale, amount=0.10, status=submitted_for_settlement, createdAt=Thursday, 22-Jun-17 11:49:48 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=465858, last4=4217, cardType=Visa, expirationMonth=05, expirationYear=2020, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=Barclays Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=05/2020, maskedNumber=465858******4217], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Hon, lastName=, company=, email=hon@milpo.co.uk, website=, phone=07450890888, fax=]]]
+
+
+Log date：2017-06-22 13:00:14
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=e013bdy8, type=sale, amount=0.04, status=submitted_for_settlement, createdAt=Thursday, 22-Jun-17 12:00:09 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=465858, last4=4217, cardType=Visa, expirationMonth=05, expirationYear=2020, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=Barclays Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=05/2020, maskedNumber=465858******4217], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Hon, lastName=, company=, email=hon@milpo.co.uk, website=, phone=07450890888, fax=]]]
+
+
+Log date：2017-06-25 01:45:31
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=08aw9d39, type=sale, amount=0.10, status=submitted_for_settlement, createdAt=Sunday, 25-Jun-17 00:45:28 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=475129, last4=1246, cardType=Visa, expirationMonth=04, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=National Westminster Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=04/2019, maskedNumber=475129******1246], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Martin, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=07777733333, fax=]]]
+
+
+Log date：2017-06-25 03:01:04
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=h1qzje52, type=sale, amount=0.33, status=submitted_for_settlement, createdAt=Sunday, 25-Jun-17 02:01:00 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=465943, last4=7820, cardType=Visa, expirationMonth=11, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=HSBC Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=11/2019, maskedNumber=465943******7820], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Martin, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=07777733333, fax=]]]
+
+
+Log date：2017-06-25 18:14:17
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=1qceexvp, type=sale, amount=0.33, status=submitted_for_settlement, createdAt=Sunday, 25-Jun-17 17:14:12 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=475129, last4=1246, cardType=Visa, expirationMonth=04, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=National Westminster Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=04/2019, maskedNumber=475129******1246], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Martin, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=07777733333, fax=]]]
+
+
+Log date：2017-06-26 02:57:46
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=fr90s8kb, type=sale, amount=0.33, status=submitted_for_settlement, createdAt=Monday, 26-Jun-17 01:57:43 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=378282, last4=0005, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=378282******0005], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=098864573472, fax=]]]
+
+
+Log date：2017-06-26 03:00:20
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=r4ssjw99, type=sale, amount=0.33, status=submitted_for_settlement, createdAt=Monday, 26-Jun-17 02:00:17 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=378282, last4=0005, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=378282******0005], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=15743521875, fax=]]]
+
+
+Log date：2017-06-26 03:31:23
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=cyx2ye1r, type=sale, amount=0.33, status=submitted_for_settlement, createdAt=Monday, 26-Jun-17 02:31:19 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=378282, last4=0005, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=378282******0005], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=01324571583, fax=]]]
+
+
+Log date：2017-06-26 03:42:42
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=jbn2b629, type=sale, amount=0.33, status=submitted_for_settlement, createdAt=Monday, 26-Jun-17 02:42:40 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=378282, last4=0005, cardType=American Express, expirationMonth=02, expirationYear=2018, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/american_express.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=02/2018, maskedNumber=378282******0005], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=, lastName=, company=, email=grace@inspirr.com, website=, phone=012346579841, fax=]]]
+
+
+Log date：2017-06-26 23:14:01
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=ec2b65eg, type=sale, amount=0.33, status=submitted_for_settlement, createdAt=Monday, 26-Jun-17 22:13:55 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=475129, last4=1246, cardType=Visa, expirationMonth=04, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=National Westminster Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=04/2019, maskedNumber=475129******1246], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Martin, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=07777733333, fax=]]]
+
+
+Log date：2017-06-26 23:34:44
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=90paanbw, type=sale, amount=0.33, status=submitted_for_settlement, createdAt=Monday, 26-Jun-17 22:34:39 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=475129, last4=1246, cardType=Visa, expirationMonth=04, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=National Westminster Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=04/2019, maskedNumber=475129******1246], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Martin, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=07777733333, fax=]]]
+
+
+Log date：2017-06-27 16:03:26
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=e3em42f8, type=sale, amount=0.33, status=submitted_for_settlement, createdAt=Tuesday, 27-Jun-17 15:03:20 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=475129, last4=1246, cardType=Visa, expirationMonth=04, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=National Westminster Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=04/2019, maskedNumber=475129******1246], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Martin, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=07777733333, fax=]]]
+
+
+Log date：2017-06-28 08:47:17
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=jg7w3pwm, type=sale, amount=0.07, status=submitted_for_settlement, createdAt=Wednesday, 28-Jun-17 07:47:11 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=465858, last4=4217, cardType=Visa, expirationMonth=05, expirationYear=2020, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=Barclays Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=05/2020, maskedNumber=465858******4217], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Hon, lastName=, company=, email=hon@milpo.co.uk, website=, phone=07450890888, fax=]]]
+
+
+Log date：2017-06-30 11:00:33
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=dy3zmapd, type=sale, amount=0.33, status=submitted_for_settlement, createdAt=Friday, 30-Jun-17 10:00:26 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=475129, last4=1246, cardType=Visa, expirationMonth=04, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=National Westminster Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=04/2019, maskedNumber=475129******1246], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Martin, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=07777733333, fax=]]]
+
+
+Log date：2017-06-30 16:07:35
+BRAINTREE: 
+Braintree\Result\Successful[Braintree\Transaction[id=3smke1x0, type=sale, amount=0.33, status=submitted_for_settlement, createdAt=Friday, 30-Jun-17 15:07:30 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=475129, last4=1246, cardType=Visa, expirationMonth=04, expirationYear=2019, customerLocation=US, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production, prepaid=No, healthcare=No, debit=Yes, durbinRegulated=No, commercial=Unknown, payroll=No, issuingBank=National Westminster Bank PLC, countryOfIssuance=GBR, productId=F, uniqueNumberIdentifier=, venmoSdk=, expirationDate=04/2019, maskedNumber=475129******1246], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Martin, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=07777733333, fax=]]]
+
+
+Log date：2017-07-10 16:31:03
+BRAINTREE Sandbox: 
+Braintree\Result\Successful[Braintree\Transaction[id=pa9qhsz5, type=sale, amount=7.03, status=settling, createdAt=Monday, 10-Jul-17 15:31:03 UTC, creditCardDetails=Braintree\Transaction\CreditCardDetails[token=, bin=, last4=, cardType=, expirationMonth=, expirationYear=, customerLocation=, cardholderName=, imageUrl=https://assets.braintreegateway.com/payment_method_logo/unknown.png?environment=sandbox, prepaid=Unknown, healthcare=Unknown, debit=Unknown, durbinRegulated=Unknown, commercial=Unknown, payroll=Unknown, issuingBank=Unknown, countryOfIssuance=Unknown, productId=Unknown, uniqueNumberIdentifier=, venmoSdk=, expirationDate=/, maskedNumber=******], customerDetails=Braintree\Transaction\CustomerDetails[id=, firstName=Martin, lastName=, company=, email=mkwan@milpo.co.uk, website=, phone=07777733333, fax=]]]
+
+

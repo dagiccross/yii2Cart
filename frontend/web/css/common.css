@@ -1,0 +1,811 @@
+a,span,p,em{font-size:12px;color:#5c5c5c}
+body,header,footer,div,ul,li,p,dt,dd,dl,span,table,tr,td,th{margin:0px;padding:0px;border:0px;}
+/*--背景动画--*/
+header{
+	width:100%;
+	/*background:url(../images/day.png) no-repeat top center;*/
+	background-size: 100% auto;
+	z-index:1;
+	position: relative;
+	overflow:hidden;
+	}
+header .day{
+	width:100%;height:100%;
+	background:url(../images/day.png) no-repeat top center;
+	background-size: 100% auto;
+	z-index:1;
+	position: relative;
+	overflow:hidden;
+	-webkit-animation: nightday 20s infinite linear;
+	-moz-animation: nightday 20s infinite linear;
+	-o-animation: nightday 20s infinite linear;
+	animation: nightday 20s infinite linear;
+	}
+	@-webkit-keyframes nightday {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;			 	
+				
+			}
+	}
+	@-moz-keyframes nightday {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;			 	
+				
+			}
+	}
+	@-o-keyframes nightday {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 100;			 	
+				
+			}
+	}
+	@keyframes nightday {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;			 	
+				
+			}
+	}
+header .night{
+	width:100%;height: 100%;
+	background:url(../images/night.png) no-repeat top center;
+	background-size: 100% auto;
+	z-index:1;
+	position: absolute;
+	top:0px;
+	left:0px;
+	opacity: 0;
+	-webkit-animation: daynight 20s infinite linear;
+	-moz-animation: daynight 20s infinite linear;
+	-o-animation: daynight 20s infinite linear;
+	animation: daynight 20s infinite linear;
+	}
+	@-webkit-keyframes daynight {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+	}
+	@-moz-keyframes daynight {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+	}
+	@-o-keyframes daynight {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+	}
+	@keyframes daynight {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+	}
+header .bai{width:100%;background:url(../images/bai.png) no-repeat top center;background-size: 100% auto;z-index:100;position: absolute;bottom: -1px;}
+/*--手动画--*/
+header .hander{
+	width: 25%;
+	background:url(../images/hander.png) no-repeat top center;
+	background-size: 100% auto;
+	z-index:5;
+	position: absolute;
+	bottom: -14%;
+	left: 14%;
+	-webkit-animation: hander 10s infinite linear;
+	-moz-animation: hander 10s infinite linear;
+	-o-animation: hander 10s infinite linear;
+	animation: hander 10s infinite linear;
+	}
+	@-webkit-keyframes hander {
+		0% {
+		 	-webkit-transform: rotate(0deg);
+		}
+		35% {
+		 	-webkit-transform: rotate(10deg);
+		}
+		60% {
+		 	-webkit-transform: rotate(0deg);
+		}
+		75% {
+		 	-webkit-transform: rotate(-5deg);
+		}
+		100% {
+		 	-webkit-transform: rotate(0deg);
+		}
+	}
+	@-moz-keyframes hander {
+		0% {
+		 	-moz-transform: rotate(0deg);
+		}
+		35% {
+		 	-moz-transform: rotate(10deg);
+		}
+		60% {
+		 	-moz-transform: rotate(0deg);
+		}
+		75% {
+		 	-moz-transform: rotate(-5deg);
+		}
+		100% {
+		 	-moz-transform: rotate(0deg);
+		}
+	}
+	
+	@-o-keyframes hander {
+	 	0% {
+		 	-o-transform: rotate(0deg);
+		}
+		35% {
+		 	-o-transform: rotate(10deg);
+		}
+		60% {
+		 	-o-transform: rotate(0deg);
+		}
+		75% {
+		 	-o-transform: rotate(-5deg);
+		}
+		100% {
+		 	-o-transform: rotate(0deg);
+		}
+	}
+	@keyframes hander {
+	 	0% {
+		 	transform: rotate(0deg);
+		}
+		35% {
+		 	transform: rotate(10deg);
+		}
+		60% {
+		 	transform: rotate(0deg);
+		}
+		75% {
+		 	transform: rotate(-5deg);
+		}
+		100% {
+		 	transform: rotate(0deg);
+		}
+	}
+/*--手动画 end--*/
+/*--船动画--*/
+header .boat{
+	width: 34%;
+	background:url(../images/boat.png) no-repeat top center;
+	background-size: 100% auto;
+	z-index:10;
+	position: absolute;top: 25%;right: 14.5%;
+	-webkit-animation: boat 10s infinite cubic-bezier(0.91, 0.01, 0.6, 0.89);
+	-moz-animation: boat 10s infinite cubic-bezier(0.1, 0.1, 0.95, 0.5);
+	-o-animation: boat 10s infinite cubic-bezier(0.1, 0.1, 0.95, 0.5);
+	animation: boat 10s infinite cubic-bezier(0.1, 0.1, 0.95, 0.5);
+	}
+	@keyframes boat {
+	 	0% {
+		 	transform: rotate(0deg);
+		}
+		35% {
+		 	transform: rotate(5deg) skewX(3deg);
+		 	right:16%;
+		}
+		60% {
+		 	transform: rotate(2deg);
+		 	right:15%;
+
+		}
+		75% {
+		 	transform: rotate(1deg);
+		 	right:14.5%;
+
+		}
+		100% {
+		 	transform: rotate(0deg);
+		 	right:14.5%;
+
+		}
+	}
+	@-webkit-keyframes boat {
+	 	0% {
+		 	-webkit-transform: rotate(0deg);
+		}
+		35% {
+		 	-webkit-transform: rotate(5deg) skewX(3deg);
+		 	right:16%;
+		}
+		60% {
+		 	-webkit-transform: rotate(2deg);
+		 	right:15%;
+
+		}
+		75% {
+		 	-webkit-transform: rotate(1deg);
+		 	right:14.5%;
+
+		}
+		100% {
+		 	-webkit-transform: rotate(0deg);
+		 	right:14.5%;
+
+		}
+	}
+	@-moz-keyframes boat {
+	 	0% {
+		 	-moz-transform: rotate(0deg);
+		}
+		35% {
+		 	-moz-transform: rotate(5deg) skewX(3deg);
+		 	right:16%;
+		}
+		60% {
+		 	-moz-transform: rotate(2deg);
+		 	right:15%;
+
+		}
+		75% {
+		 	-moz-transform: rotate(1deg);
+		 	right:14.5%;
+
+		}
+		100% {
+		 	-moz-transform: rotate(0deg);
+		 	right:14.5%;
+
+		}
+	}
+	@-o-keyframes boat {
+	 	0% {
+		 	-o-transform: rotate(0deg);
+		}
+		35% {
+		 	-o-transform: rotate(5deg) skewX(3deg);
+		 	right:16%;
+		}
+		60% {
+		 	-o-transform: rotate(0deg);
+		 	right:15%;
+
+		}
+		75% {
+		 	-o-transform: rotate(1deg);
+		 	right:14.5%;
+
+		}
+		100% {
+		 	-o-transform: rotate(0deg);
+		 	right:14.5%;
+
+		}
+	}
+	
+/*--船动画 end--*/
+/*star动画*/
+.star{
+	width:100%;
+	z-index: 99;
+	position: absolute;
+	z-index: 9;
+	opacity: 0;
+	-webkit-animation: star 20s infinite linear;
+	-moz-animation: star 20s infinite linear;
+	-o-animation: star 20s infinite linear;
+	animation: star 20s infinite linear;
+	}
+
+@-webkit-keyframes star {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+	}
+	@-moz-keyframes star {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+	}
+	@-o-keyframes star {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+	}
+	@keyframes star {
+		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;
+			}
+			52% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			98% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+	
+			}
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+	}
+.xinxin{
+	background:url(../images/xinxin1.png) no-repeat top center;
+	background-size: 100% auto;
+	width:100%;
+	-webkit-animation: xinxin 1.5s infinite ease-in-out;
+	-moz-animation: xinxin 1.5s infinite ease-in-out;
+	-o-animation: xinxin 1.5s infinite ease-in-out;
+	animation: xinxin 1.5s infinite ease-in-out;
+	}
+	
+	@-webkit-keyframes xinxin{    /*透明度由0到1*/
+    0%{
+       opacity:0; /*透明度为0*/
+       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+     }
+    100%{
+       opacity:1; /*透明度为1*/
+       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+
+    }
+  }
+  @-moz-keyframes xinxin{    /*透明度由0到1*/
+    0%{
+       opacity:0; /*透明度为0*/
+       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+     }
+    100%{
+       opacity:1; /*透明度为1*/
+       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+
+    }
+  }
+  @-o-keyframes xinxin{    /*透明度由0到1*/
+    0%{
+       opacity:0; /*透明度为0*/
+       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+     }
+    100%{
+       opacity:1; /*透明度为1*/
+       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+
+    }
+  }
+  @keyframes xinxin{    /*透明度由0到1*/
+    0%{
+       opacity:0; /*透明度为0*/
+       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+     }
+    100%{
+       opacity:1; /*透明度为1*/
+       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+
+    }
+  }
+/*-------- 天黑场景遮罩层以及动画 --------*/
+.nightOverlay {
+	z-index: 99;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(15, 25, 44, 0.7);
+	opacity: 0;
+	-webkit-animation: set 20s infinite linear;
+	-moz-animation: set 20s infinite linear;
+	-o-animation: set 20s infinite linear;
+	animation: set 20s infinite linear;
+}
+ @-webkit-keyframes set {
+ 0% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0.1;
+}
+ 50% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+ opacity: 1;
+}
+75% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+ opacity: 0.8;
+}
+ 100% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+}
+ @-moz-keyframes set {
+ 0% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0.1;
+}
+ 50% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+ opacity: 1;
+}
+ 100% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+}
+ @-o-keyframes set {
+ 0% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0.1;
+}
+ 50% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+ opacity: 1;
+}
+ 100% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+}
+ @keyframes set {
+ 0% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0.1;
+}
+ 50% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+ opacity: 1;
+}
+75% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+ opacity: 0.8;
+}
+ 100% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+}
+/*-------- 天黑场景遮罩层以及动画 end--------*/
+
+header .zi{
+	width: 29%;height:10%;
+	background:url(../images/xuexi.png) no-repeat top center;
+	background-size: 100% auto;
+	z-index:11;
+	position: absolute;
+	top: 64.5%;
+	left: 35.9%;
+	}
+
+header .dayfont{
+	width: 26%;height:30%;
+	background:url(../images/day-font.png) no-repeat top center;
+	background-size: 100% auto;
+	z-index:11;
+	position: absolute;
+	top: 26%;
+	left: 27.9%;
+	opacity: 0;
+	-webkit-animation: dayfont 10s infinite linear;
+	-moz-animation: dayfont 10s infinite linear;
+	-o-animation: dayfont 10s infinite linear;
+	animation: dayfont 10s infinite linear;
+}
+ @keyframes dayfont {
+ 		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+}
+
+@-webkit-keyframes dayfont {
+ 		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+}
+ @-moz-keyframes dayfont {
+ 		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+}
+ @-o-keyframes dayfont {
+ 		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+}
+
+
+header .nightfont{
+	width: 26%;height:30%;
+	background:url(../images/night-font.png) no-repeat top center;
+	background-size: 100% auto;
+	position: absolute;
+	top: 26%;
+	left: 27.9%;
+	opacity: 0;
+	-webkit-animation: nightfont 10s infinite linear;
+	-moz-animation: nightfont 10s infinite linear;
+	-o-animation: nightfont 10s infinite linear;
+	animation: nightfont 10s infinite linear;
+	}
+
+@keyframes nightfont {
+ 		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+}
+
+@-webkit-keyframes nightfont {
+ 		 	
+			48% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+}
+ @-moz-keyframes nightfont {
+ 		 	
+			0% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+}
+ @-o-keyframes nightfont {
+ 		 	
+			0% {
+			 	
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity: 1;
+			}
+			
+			100% {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+			opacity: 0;			 	
+				
+			}
+}
+

@@ -1,0 +1,301 @@
+<?php
+
+namespace common\models;
+
+use Yii;
+use yii\helpers\Html;
+/**
+ * This is the model class for table "{{%order}}".
+ *
+ */
+class Order extends \yii\db\ActiveRecord
+{
+    /**
+     * @inheritdoc
+     */
+    public static function tableName()
+    {
+        return '{{%order}}';
+    }
+
+    public static function orderStatus($key=''){
+    	$arr = ['pending'=>\Yii::t('info','Pending'),
+                'payment'=>\Yii::t('info','Payment'),
+                'deliver'=>\Yii::t('info','Deliver'),
+                'confirm'=>\Yii::t('info','Confirm'),
+                'refund'=>\Yii::t('info','Refund'),
+                'error'=>\Yii::t('info','Error')];
+    	return (!empty($key)) ? $arr[$key] :$arr;
+    }
+
+    public function mailTemplate($email){
+
+        $order_goods = \common\models\OrderGoods::findOrderGoods($this->order_id);
+
+        
+        // 優惠ID
+        $coupon_id_arr = explode(',', $this->coupon);
+        $coupon =null;
+        foreach ($coupon_id_arr as $k => $v) {
+            $model = Coupon::find()->where(['coup_id'=>$v])->asArray()->one();
+            if(!empty($model)){
+                $coupon[$model['flat_coup']] = $model;
+            }
+
+        }
+
+        $shipment_postcode = null;
+        if($this->order_type=='delivery'){
+            $shipment_postcode = ShipmentPostcode::find()->where(['postcode'=>$this->shipment_postcode])->asArray()->one(); 
+        }
+        
+
+        $mhtml = '<html>
+                    <head>
+                    <title>Order '.$this->invoice_prefix.$this->invoice_no.'</title>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                    </head>
+                    <body>
+                    <style>body { font: 12px/1.3 "Helvetica Neue",Helvetica,Arial,sans-serif; color: #333333; line-height: 1.6; }
+                    a { color: #aaaaaa; }
+                    .messageBody blockquote { border-left: 1px solid #CCCCCC; margin-left: 10px; padding-left: 4px; }
+                    * .badimagesdisabled { height: expression( this.scrollHeight < 41 ? "40px" : "auto" ); width: expression( this.scrollWidth < 41 ? "40px" : "auto" ); }
+                    .highlight { background-color: #B5D5FF; }#bodyWrapper { .overflow-x: scroll }
+                    </style>
+                    <div id="bodyWrapper">
+                    <div style="width: 680px;">
+
+                    <p style="margin-top: 0px; margin-bottom: 20px;">Thank you for your interest in '.Config::getConfig('sitename').'  shop products. Your order has been received and will be processed once payment has been confirmed.</p>
+                    <table style="border-collapse: collapse; width: 100%; border-top: 1px solid #DDDDDD; border-left: 1px solid #DDDDDD; margin-bottom: 20px;">
+                    <thead><tr>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;" colspan="2">'.$this->order_type.':'.date('Y-m-d H:i',$this->shipment_time).'</td>
+                    </tr></thead>
+                    </table>
+
+                    <table style="border-collapse: collapse; width: 100%; border-top: 1px solid #DDDDDD; border-left: 1px solid #DDDDDD; margin-bottom: 20px;">
+                    <thead><tr>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;" colspan="2">Order Details</td>
+                    </tr></thead>
+                    <tbody><tr>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;">
+                    <b>Order ID:</b> '.$this->order_id.'<br>
+                    <b>Date Added:</b> '.date('Y-m-d H:i:s',$this->add_date).'<br>
+                    <b>Payment Method:</b> '.$this->payment_type.'<br>
+                    </td>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;">
+                    <b>Email:</b> '.$email.'<br>
+                    <b>Telephone:</b> '.$this->shipment_phone.'<br>
+                    <b>IP Address:</b> '.$this->member_ip.'<br>
+                    </td>
+                    </tr></tbody>
+                    </table>
+                    <table style="border-collapse: collapse; width: 100%; border-top: 1px solid #DDDDDD; border-left: 1px solid #DDDDDD; margin-bottom: 20px;">
+                    <thead><tr>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;">Payment Address</td>
+                                  </tr></thead>
+                    <tbody><tr>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;">
+                    Name:'.$this->shipment_name.'<br>
+                    Address:'.$this->shipment_addr1.'<br>
+                    '.$this->shipment_addr2.'<br>
+                    City:'.$this->shipment_city.'<br>
+                    PostCode:'.$this->shipment_postcode.$this->shipment_postcode2.'
+                    </td>
+                                  </tr></tbody>
+                    </table>
+                    <table style="border-collapse: collapse; width: 100%; border-top: 1px solid #DDDDDD; border-left: 1px solid #DDDDDD; margin-bottom: 20px;">
+                    <thead><tr>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;">Product</td>
+                            <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: left; padding: 7px; color: #222222;">Options</td>
+                            <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: right; padding: 7px; color: #222222;">Quantity</td>
+                            <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: right; padding: 7px; color: #222222;">Price</td>
+                            <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; background-color: #EFEFEF; font-weight: bold; text-align: right; padding: 7px; color: #222222;">Total</td>
+                          </tr></thead>
+                    <tbody>';
+        $total = 0;
+        foreach ($order_goods as $k => $v) {
+            $total += $v['subtotal'];
+
+            $mhtml .= '<tr>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;">'.$v['name'].'</td>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;"></td>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;">'.$v['quanity'].'</td>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;">'.Config::getConfig('currency').$v['price'].'</td>
+                    <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;">'.Config::getConfig('currency').$v['subtotal'].'</td>
+                    </tr>';
+            if(isset($v['goods_options'])&&!empty($v['goods_options'])){
+                foreach ($v['goods_options'] as $_k => $_v) {
+                  $ohtml = Html::beginTag('tr');
+                  $ohtml .= Html::tag('td','');
+                  $ohtml .= Html::tag('td',$_v['name'],['style'=>'font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: left; padding: 7px;']);
+                  if($_v['required']=='0'){
+                    $ohtml .= Html::tag('td','×'.$_v['quanity'],['style'=>'font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;']);
+                    $ohtml .= Html::tag('td',Config::getConfig('currency').$_v['price'],['style'=>'font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;']);
+                  
+                  }else{
+                    $ohtml .= Html::tag('td','');
+                    $ohtml .= Html::tag('td','');
+                  }
+                  $ohtml .= Html::tag('td','');
+                  $ohtml .= Html::endTag('tr');
+                  $mhtml .= $ohtml;
+                }
+            }
+        }
+
+        $free_goods = null;
+        foreach ($coupon as $k => $v) {
+            $shtml = '';
+
+            if ($v['flat_coup']=='3') {
+              $shipment_postcode['price'] = 0;
+              continue;
+            }else if ($v['flat_coup']=='5') {
+              $free_goods = $v;
+              continue;
+            }
+
+
+            $last_total = $total;
+            $total = ($v['type']=='0') ? $total*$v['coup_value'] : ($total - $v['coup_value']);
+            $discount = ($v['type']=='0') ? ((1-$v['coup_value'])*100) . '%' : $v['coup_value'];
+            
+            if($v['flat_coup']=='4'){    
+
+                $shtml = Html::tag('td','First single discount ' .$discount ,['style'=>"font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;",'colspan'=>'4']);
+                
+                
+            }else if ($v['flat_coup']=='0') {
+                $shtml = Html::tag('td','Coupon ' .$discount ,['style'=>"font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;",'colspan'=>'4']);
+                
+            }else if ($v['flat_coup']=='2') {
+                $shtml = Html::tag('td','Up '.$v['total'].' Free '.$discount ,['style'=>"font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;",'colspan'=>'4']);
+                            
+            }else{
+                $shtml = Html::tag('td',''.$v['name'].' Free '.$discount ,['style'=>"font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;",'colspan'=>'4']);
+            }
+
+            if($v['flat_coup']!='3'&&$v['flat_coup']!='5'){
+                $shtml .= Html::tag('td','-'.($last_total-$total),['style'=>'font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;']);
+                $shtml = Html::tag('tr',$shtml);
+                $mhtml .= $shtml;
+            }
+            
+        }
+        if($this->order_type=='deliver'){
+            $mhtml .= '<tr>
+                            <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;" colspan="4"><b>Deliver:</b></td>
+                            <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;">'.Config::getConfig('currency').$shipment_postcode['price'].'</td>
+                        </tr>';
+        }
+        if(!empty($this->card_fee)){
+            $mhtml .= '<tr>
+                            <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;" colspan="4"><b>Card Fee:</b></td>
+                            <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;">'.Config::getConfig('currency').$this->card_fee.'</td>
+                        </tr>';
+
+        }
+        $mhtml .= '</tbody>
+                    <tfoot>
+                    <tr>
+                        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;" colspan="4"><b>Total:</b></td>
+                        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;">'.Config::getConfig('currency').sprintf("%.2f",($this->total+$this->card_fee)).'</td>
+                    </tr>';
+        if(isset($free_goods['memo'])){
+            $mhtml .= '<tr>
+                        <td style="font-size: 12px; border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; text-align: right; padding: 7px;" colspan="5"><b>'.$free_goods['memo'].' for one free today on orders over '.Config::getConfig('currency').$free_goods['total'].'</b>:'.$this->comment.'</td>
+                        </tr>';
+        }
+                    
+        $mhtml .= '</tfoot>
+                    </table>
+                    </div>
+
+                    </div></body></html>';
+        return $mhtml;
+    }
+
+    public function sendEmail($email,$from_email='')
+    {   
+        $from_email = empty($from_email) ? \common\models\Config::getConfig('smtp_user') : $from_email;
+        
+        require_once(dirname(\Yii::$app->basePath).'/thridpart/phpmailer/class.phpmailer.php');
+        $mail = new \PHPMailer();
+        $mail->IsSMTP();                  // send via SMTP   
+        $mail->Host = \common\models\Config::getConfig('smtp_server');   // SMTP servers   
+
+        $ssl = \common\models\Config::getConfig('smtp_ssl');
+        $ssl = empty($ssl)||$ssl==false ? false : true;
+        $port = \common\models\Config::getConfig('smtp_port');
+        $port = empty($port) ? '25' : $port;
+
+        $mail->SMTPAuth = $ssl;           // turn on SMTP authentication 
+        $mail->Port = Config::getConfig('smtp_port'); // SMTP Port $mail->Port = Config::getConfig('smtp_port'); // SMTP Port 
+
+        $mail->Username = \common\models\Config::getConfig('smtp_user');     // SMTP username  注意：普通邮件认证不需要加 @域名   
+        $mail->Password = \common\models\Config::getConfig('smtp_password'); // SMTP password   
+        $mail->From = $from_email;      // 发件人邮箱   
+        $mail->FromName =  \common\models\Config::getConfig('smtp_user');  // 发件人   
+
+        $mail->CharSet = "UTF-8";   // 这里指定字符集！   
+        $mail->Encoding = "base64";   
+        $mail->AddAddress($email);  // 收件人邮箱和姓名   
+
+        $mail->IsHTML(true);  // send as HTML   
+        // 邮件主题   
+        $mail->Subject = 'Order '.$this->invoice_no;   
+        // 邮件内容  
+
+        $mail->Body = $this->mailTemplate($email);                                                                         
+        $mail->AltBody ="text/html"; 
+        // echo $from_email; 
+        // exit(); 
+        return $mail->Send();
+    }
+
+    public static function subtractQuanity($order_id){
+        $model = static::find()->where(['in','id',$order_id])->all();
+
+        $flat = 0;
+        foreach ($model as $k => $order) {
+            $order_goods = OrderGoods::find()->where(['order_id'=>$order->order_id])->asArray()->all();
+            
+            foreach ($order_goods as $k => $v) {
+                if(empty($v['feature'])||$v['feature']=='0:0'){
+                    $goods = Goods::findOne($v['goods_id']);
+                    if(!empty($goods)){
+                        $goods->quanity -= $v['quanity'];
+                        $goods->save();
+                        $flat++;
+                    }
+                    
+                }else{
+                    $sku = Goodssku::findOne(['goods_id'=>$v['goods_id'],'feature_arr'=>$v['feature']]);
+                    // Goodssku::updateAll('quanity=quanity-'.$v['quanity'],['goods_id'=>$v['goods_id'],
+                                                                        // 'feature_arr'=>$v['feature']]);
+                    if(!empty($sku)){
+                        $sku->quanity -= $v['quanity'];
+                        \Yii::$app->db->createCommand()->update("{{%goodssku}}",['quanity'=>$sku->quanity],['goods_id'=>$v['goods_id'],'feature_arr'=>$v['feature']])->execute();
+                        $flat++;
+                    }
+                    
+                }
+
+            }
+
+            $coupon_id_arr = explode(',', $order->coupon);
+
+            foreach ($coupon_id_arr as $k => $v) {
+                
+                @Coupon::updateAll('coup_quanity = coup_quanity -1',['coup_id'=>$v]);
+            }
+
+        }
+        
+        return $flat;
+
+    }
+
+
+
+}
