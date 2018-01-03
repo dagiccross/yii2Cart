@@ -9,7 +9,7 @@ use common\models\Config;
 <div id="cart-info" class="home-cat">
 <form name="cart_order" action="<?=Url::to(['/cart/checkout'])?>" class="cart-checkout-from" method="post">
 	<?php echo Html::hiddenInput('cart[additional]','');?>
-	<div class="right-t1" style="margin-top:-5px;margin-bottom:-20px;padding:-15px;">
+	<div class="right-t1" style="margin-bottom:-20px;padding:-15px;">
 		<div id="menuSwitcher">
 	    <div class="collect">
 	    	<?=Html::tag('p',Html::radio('cart[send]',$data['send']=='collection',['value'=>'collection','onchange'=>'javascript:CART.changeSend(this)']).'Collection');?>

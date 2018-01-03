@@ -94,7 +94,7 @@ border-bottom-right-radius: 5px;}
     .leftsec-top img{ }
     .leftsec-top a{color: #000;font-weight: 700;}
     .menu-down>ul>li>a{color: #797979;font-size: 16px;}
-    .menu-down>ul>li{margin: 2px 0;padding:8px 5px 8px 22px;background: #f5f5f5;}
+    .menu-down>ul>li{padding:8px 5px 8px 22px;background: #f5f5f5;}
     .menu-down>ul>li:hover{background-color:#EAE9E9;}
     .menu-down>ul>li.active{background-color:#EAE9E9;}
     .menu-down>ul>li.active a{color: #000;}
