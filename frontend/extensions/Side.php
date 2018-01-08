@@ -27,10 +27,10 @@ class Side extends Widget
   public function init()
   {
     $value = Yii::$app->cache->get('menu'.$this->type);
-    
+
 
     $value = getCategory(0,$this->type);
-    Yii::$app->cache->set('menu'.$this->type,$value,1);
+    Yii::$app->cache->set('menu'.$this->type,$value,60);
 
     $this->_category = $value;
     parent::init();
