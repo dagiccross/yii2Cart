@@ -185,7 +185,7 @@ public function actionCheckout(){
     $delivery_flat_1 = isset($post_info['send'])&&$post_info['send']=='deliver' ? true : false;
   }
   if($delivery_flat&&$delivery_flat_1){
-    $delivery_message = \Yii::t('info','Oops! Delivery not available at this moment. Please try again later or collect order at our restaurant. ');
+    $delivery_message = \Yii::t('info','Oops! Delivery not available at this moment. Please try again later or collect order at our shop. ');
     \Yii::$app->getSession()->setFlash('message',$delivery_message);
     return $this->redirect(['/site/product']);
   }
@@ -245,7 +245,7 @@ public function actionCheckout(){
 
   // 當今天是在假日開始和結束的日期之間
   if($holiday_flag){
-    $holiday_message = !empty($holiday_message) ? $holiday_message : \Yii::t('info','Restaurant is now on holiday, please order again later!');
+    $holiday_message = !empty($holiday_message) ? $holiday_message : \Yii::t('info','Shop is now on holiday, please order again later!');
     \Yii::$app->getSession()->setFlash('message',$holiday_message);
     // return $this->redirect(['/site/product']);
   }
