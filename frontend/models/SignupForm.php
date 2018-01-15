@@ -55,8 +55,8 @@ class SignupForm extends Model
             [['password','confirm_password'], 'required'],
             [['password','confirm_password'], 'string', 'min' => 6],
             ['password','compare', 'compareAttribute'=>'confirm_password'],
-
-            [['offers','rememberMe','shipment_name','shipment_city','shipment_addr','shipment_addr2','shipment_addr3','shipment_phone','shipment_postcode','shipment_postcode2'],'string', 'max' => 255],
+            [['shipment_addr','shipment_addr2','shipment_addr3'],'string','max' => 24],
+            [['offers','rememberMe','shipment_name','shipment_city','shipment_phone','shipment_postcode','shipment_postcode2'],'string', 'max' => 255],
         ];
     }
 

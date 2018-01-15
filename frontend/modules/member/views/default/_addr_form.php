@@ -37,7 +37,7 @@ use yii\helpers\UrlManager;
     <div class="row form-group">
       <div class="col-sm-4 control-lable">Address:</div>
       <div class="col-sm-8 control">
-        <?=Html::activeTextInput($useraddr,'shipment_addr',['class'=>'acount-input','id'=>'shipment_addr'])?>
+        <?=Html::activeTextInput($useraddr,'shipment_addr',['class'=>'acount-input','id'=>'shipment_addr','style'=>'text-transform:capitalize;','maxlength'=> 24])?>
         <span class="control-icon"></span>
       </div>
     </div>
@@ -45,14 +45,14 @@ use yii\helpers\UrlManager;
     <div class="row form-group">
       <div class="col-sm-4 control-lable"></div>
       <div class="col-sm-8 control">
-        <?=Html::activeTextInput($useraddr,'shipment_addr2',['class'=>'acount-input','id'=>'shipment_addr2'])?>
+        <?=Html::activeTextInput($useraddr,'shipment_addr2',['class'=>'acount-input','id'=>'shipment_addr2','style'=>'text-transform:capitalize;','maxlength'=> 24])?>
       </div>
     </div>
 
     <div class="row form-group hide">
       <div class="col-sm-4 control-lable"></div>
       <div class="col-sm-8 control">
-        <?=Html::activeTextInput($useraddr,'shipment_addr3',['class'=>'acount-input','id'=>'shipment_addr3'])?>
+        <?=Html::activeTextInput($useraddr,'shipment_addr3',['class'=>'acount-input','id'=>'shipment_addr3','style'=>'text-transform:capitalize;','maxlength'=> 24])?>
       </div>
     </div>
 

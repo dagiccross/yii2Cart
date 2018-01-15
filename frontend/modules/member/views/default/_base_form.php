@@ -46,14 +46,14 @@ use yii\bootstrap\Modal;
       <div class="row form-group">
         <div class="col-sm-4 control-lable">Address:</div>
         <div class="col-sm-8 control">
-          <?=Html::activeTextInput($addr,'shipment_addr',['class'=>'acount-input'])?>
+          <?=Html::activeTextInput($addr,'shipment_addr',['class'=>'acount-input','style'=>'text-transform:capitalize;','maxlength'=> 24])?>
         </div>
       </div>
 
       <div class="row form-group">
         <div class="col-sm-4 control-lable"></div>
         <div class="col-sm-8 control">
-          <?=Html::activeTextInput($addr,'shipment_addr2',['class'=>'acount-input'])?>
+          <?=Html::activeTextInput($addr,'shipment_addr2',['class'=>'acount-input','style'=>'text-transform:capitalize;','maxlength'=> 24])?>
         </div>
       </div>
 

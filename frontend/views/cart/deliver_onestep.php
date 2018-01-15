@@ -12,11 +12,11 @@ use yii\bootstrap\ActiveForm;
       <?php $form = ActiveForm::begin(['id' => 'deliver_one_step']); ?>
 
       <?=Html::tag('p','PHONE NUMBER',['class'=>'lotitle'])?>
-      <?=Html::tag('p',Html::textInput('shipment[shipment_phone]',$shipment['shipment_phone'],['class'=>'email-input','placeholder'=>'']))?>
+      <?=Html::tag('p',Html::textInput('shipment[shipment_phone]',$shipment['shipment_phone'],['class'=>'email-input','placeholder'=>'Phone numbers']))?>
 
       <?=Html::tag('p','ADDRESS',['class'=>'lotitle'])?>
-      <?=Html::tag('p',Html::textInput('shipment[shipment_addr1]',$shipment['shipment_addr'],['class'=>'email-input','placeholder'=>'Address line 1']))?>
-      <?=Html::tag('p',Html::textInput('shipment[shipment_addr2]',$shipment['shipment_addr2'],['class'=>'email-input','placeholder'=>'Address line 2']))?>
+      <?=Html::tag('p',Html::textInput('shipment[shipment_addr1]',$shipment['shipment_addr'],['class'=>'email-input','placeholder'=>'Address line 1','style'=>'text-transform:capitalize;','maxlength'=> 24]))?>
+      <?=Html::tag('p',Html::textInput('shipment[shipment_addr2]',$shipment['shipment_addr2'],['class'=>'email-input','placeholder'=>'Address line 2','style'=>'text-transform:capitalize;','maxlength'=> 24]))?>
 
       <?php
       $map_calculation = \common\models\Config::getConfig('map_calculation');
