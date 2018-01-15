@@ -575,7 +575,7 @@ class Order extends \yii\db\ActiveRecord
     }
     if(!empty($this->card_fee)){
       $mhtml .= '<tr class="bd-all">
-      <td style="font-size: 12px; text-align: right; padding: 7px;" colspan="4"><b>Card Fee:</b></td>
+      <td style="font-size: 12px; text-align: right; padding: 7px;" colspan="4"><b>Service Charge:</b></td>
       <td style="font-size: 12px; text-align: right; padding: 7px;">'.self::currencyMoney($this->card_fee).'</td>
       </tr>';
 

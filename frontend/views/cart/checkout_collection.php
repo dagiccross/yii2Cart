@@ -87,7 +87,7 @@ use yii\bootstrap\ActiveForm;
            <div class="paytotal">
             <p class="pay-subtotal">Subtotal <span class="to-price"><?=$total?></span></p>
 
-            <!-- <p class="card-fee">Card fee <span class="to-price">5.00</span></p> -->
+
             <p class="pay-subtotal">Total<span class="to-price"><?=Config::getConfig('currency').$total?></span></p>
            </div>
            <p class="spicy">more spicy on curry no taste enhancer</p>

@@ -81,28 +81,28 @@ endif;
       $alis_name = '';
       if($v['key']=='paypal'){
         if(!empty($v['card_fee'])){
-          $phtml .= Html::tag('p','fee: ('.Config::currencyMoney($v['card_fee']).')');
+          $phtml .= Html::tag('p','Service Charge: ('.Config::currencyMoney($v['card_fee']).')');
         }
 
         $phtml .= Html::tag('p',Html::img(showImg(IMG_URL.'/paypal.jpg'),['style'=>'']));
         $alis_name = '(Paypal)';
       }else if($v['key']=='worldpay'){
         if(!empty($v['card_fee'])){
-          $phtml .= Html::tag('p','card fee: ('.Config::currencyMoney($v['card_fee']).')');
+          $phtml .= Html::tag('p','Service Charge: ('.Config::currencyMoney($v['card_fee']).')');
         }
 
         $phtml .= Html::tag('p',Html::img(showImg(IMG_URL.'/worldpay_log.jpg'),['style'=>'height:86px;']));
         $alis_name = '(Card)';
       }else if($v['key']=='cardmachine'){
         if(!empty($v['card_fee'])){
-          $phtml .= Html::tag('p','card fee: ('.Config::currencyMoney($v['card_fee']).')');
+          $phtml .= Html::tag('p','Service Charge: ('.Config::currencyMoney($v['card_fee']).')');
         }
         $phtml .= Html::tag('p',Html::img(showImg(IMG_URL.'/visa-back.png'),['style'=>'']));
         $phtml .= '<p>Request card machine upon arrival</p>';
         $alis_name = '(Card Machine)';
       }else if($v['key']=='braintree'){
         if (!empty($v['card_fee'])) {
-          $phtml .= Html::tag('p', 'card fee: (' . Config::currencyMoney($v['card_fee']) . ')');
+          $phtml .= Html::tag('p', 'Service Charge: (' . Config::currencyMoney($v['card_fee']) . ')');
         }
         $phtml .= Html::tag('p', Html::img(showImg(IMG_URL . '/braintree.png'), ['style' => 'width:165px;']));
         $alis_name = '(Braintree)';

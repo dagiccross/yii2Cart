@@ -189,7 +189,7 @@ use common\models\Config;
             <p>Delivery fee <?=isset($list['free_ship'])&&!empty($list['free_ship']) ? '(free)' : '';?><span class="to-price"><?=sprintf("%.2f",$list['shipment_price']);?></span></p>
             <?php endif;?>
 
-	      <!-- <p>Delivery fee <span class="to-price">1.00</span></p> -->
+	      
 	      <p>Total<span class="to-price" id="cart-total" data-total="<?=$old_total?>"> <?=Config::currencyMoney($total)?></span></p>
 	    </div>
 	    <?php
