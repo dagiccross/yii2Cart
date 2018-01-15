@@ -96,11 +96,11 @@ use yii\bootstrap\ActiveForm;
             <?php endif;?>
 
             <?=Html::tag('p','Address*',['class'=>'detitle'])?>
-            <?=Html::tag('p',Html::activeTextInput($model,'shipment_addr',['class'=>'form-control','placeholder'=>'Address line 1']))?>
+            <?=Html::tag('p',Html::activeTextInput($model,'shipment_addr',['class'=>'form-control','placeholder'=>'Address line 1','style'=>'text-transform:capitalize;','maxlength'=> 24]))?>
             <?php if(isset($model->getErrors('shipment_addr')['0'])):?>
               <p style="color:red;">Address line 1 cannot be blank</p>
             <?php endif;?>
-            <?=Html::tag('p',Html::activeTextInput($model,'shipment_addr2',['class'=>'form-control','placeholder'=>'Address line 2 (optional)']))?>
+            <?=Html::tag('p',Html::activeTextInput($model,'shipment_addr2',['class'=>'form-control','placeholder'=>'Address line 2 (optional)','style'=>'text-transform:capitalize;','maxlength'=> 24]))?>
 
             <!-- find out map_calculation -->
             <?php
