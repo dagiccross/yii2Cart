@@ -206,7 +206,9 @@ $(document).ready(function () {
   <div class="row">
   <div class="col-sm-12 total-row">Requested <?php echo $order->order_type=='deliver'?'delivery':$order->order_type;?> Time</div>
   <div class="col-sm-12">
-    <?php echo date('l dS M g:i A',$order->shipment_time);?>
+    <?php
+    $estimatedDate = date('Y',$order->shipment_time) == '1970' ? 'ASAP' : date('d/m/Y'.' - '.'H:i',$order->shipment_time);
+    echo $estimatedDate;?>
   </div>
   </div>
   <div class="row">
