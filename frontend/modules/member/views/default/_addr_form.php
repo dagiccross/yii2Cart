@@ -79,59 +79,59 @@ use yii\helpers\UrlManager;
         $map_calculation = \common\models\Config::getConfig('map_calculation');
         if ($map_calculation == 0){
           ?>
-          <?=Html::activeDropdownlist($useraddr,'shipment_city',getShipmentPostcode(),['class'=>'acount-input','id'=>'alias'])?>
-          <?php } elseif ($map_calculation == 1){ ?>
-            <?=Html::activeTextInput($useraddr,'shipment_city',['class'=>'acount-input','id'=>'alias'])?>
-            <?php } ?>
-            <span class="control-icon"></span>
-          </div>
+          <?=Html::activeTextInput($useraddr,'shipment_city',['class'=>'acount-input','id'=>'alias'])?>
+        <?php } elseif ($map_calculation == 1){ ?>
+          <?=Html::activeTextInput($useraddr,'shipment_city',['class'=>'acount-input','id'=>'alias'])?>
+        <?php } ?>
+        <span class="control-icon"></span>
+      </div>
+    </div>
+    <div class="row form-group">
+      <div class="col-sm-4 control-lable">Postcode:*</div>
+      <div class="col-sm-8 control">
+        <?php
+        $map_calculation = \common\models\Config::getConfig('map_calculation');
+        if ($map_calculation == 0){
+          ?>
+          <?=Html::activeTextInput($useraddr,'shipment_postcode2',['class'=>'acount-input','style'=>'text-transform:uppercase;','id'=>'alias','maxlength'=> 8])?>
+        <?php } elseif ($map_calculation == 1){ ?>
+          <?=Html::activeDropdownList($useraddr,'shipment_postcode',getShipmentPostcode(),['class'=>'postcode-input','id'=>'alias'])?>
+          <?=Html::activeTextInput($useraddr,'shipment_postcode2',['class'=>'postcode2-input','id'=>'alias','placeholder'=>'last 3 characters','maxlength'=> 3])?>
+        <?php } ?>
+        <span class="control-icon"></span>
+      </div>
+    </div>
+
+    <div class="row form-group">
+      <div class="col-sm-4 control-lable">What is it (e.g. Home)?</div>
+      <div class="col-sm-8 control">
+        <?=Html::activeTextInput($useraddr,'alias',['class'=>'acount-input','id'=>'alias'])?>
+        <span class="control-icon"></span></div>
+      </div>
+
+
+
+      <div class="row form-group">
+        <div class="col-sm-4 control-lable"></div>
+        <div class="col-sm-8 control">
+          <?php echo Html::submitButton($useraddr->isNewRecord ? Yii::t('app','Store new address') : Yii::t('app','Update'),['class'=>'save-btn acount-input'])?>
         </div>
-        <div class="row form-group">
-          <div class="col-sm-4 control-lable">Postcode:*</div>
-          <div class="col-sm-8 control">
-            <?php
-            $map_calculation = \common\models\Config::getConfig('map_calculation');
-            if ($map_calculation == 0){
-              ?>
-              <?=Html::activeTextInput($useraddr,'shipment_postcode2',['class'=>'acount-input','style'=>'text-transform:uppercase;','id'=>'alias','maxlength'=> 8])?>
-              <?php } elseif ($map_calculation == 1){ ?>
-                <?=Html::activeDropdownList($useraddr,'shipment_postcode',getShipmentPostcode(),['class'=>'postcode-input','id'=>'alias'])?>
-                <?=Html::activeTextInput($useraddr,'shipment_postcode2',['class'=>'postcode2-input','id'=>'alias','placeholder'=>'last 3 characters','maxlength'=> 3])?>
-                <?php } ?>
-                <span class="control-icon"></span>
-              </div>
-            </div>
+      </div>
 
-            <div class="row form-group">
-              <div class="col-sm-4 control-lable">What is it (e.g. Home)?</div>
-              <div class="col-sm-8 control">
-                <?=Html::activeTextInput($useraddr,'alias',['class'=>'acount-input','id'=>'alias'])?>
-                <span class="control-icon"></span></div>
-              </div>
+    </div>
 
+    <div class="col-sm-6">
+      <?php
+      $errors = $useraddr->getErrors();
+      if(!empty($errors)){
 
-
-              <div class="row form-group">
-                <div class="col-sm-4 control-lable"></div>
-                <div class="col-sm-8 control">
-                  <?php echo Html::submitButton($useraddr->isNewRecord ? Yii::t('app','Store new address') : Yii::t('app','Update'),['class'=>'save-btn acount-input'])?>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-sm-6">
-              <?php
-              $errors = $useraddr->getErrors();
-              if(!empty($errors)){
-
-                echo '<ul style="color: rgb(203, 0, 0);">';
-                foreach ($errors as $key => $value) {
-                  echo Html::tag('li',$value['0']);
-                }
-                echo '</ul>';
-              }
-              ?>
-            </div>
-          </div>
-          <?php ActiveForm::end(); ?>
+        echo '<ul style="color: rgb(203, 0, 0);">';
+        foreach ($errors as $key => $value) {
+          echo Html::tag('li',$value['0']);
+        }
+        echo '</ul>';
+      }
+      ?>
+    </div>
+  </div>
+  <?php ActiveForm::end(); ?>

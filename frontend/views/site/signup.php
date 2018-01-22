@@ -102,19 +102,20 @@ use yii\bootstrap\ActiveForm;
             <?php endif;?>
             <?=Html::tag('p',Html::activeTextInput($model,'shipment_addr2',['class'=>'form-control','placeholder'=>'Address line 2 (optional)','style'=>'text-transform:capitalize;','maxlength'=> 24]))?>
 
-            <!-- find out map_calculation -->
+
             <?php
+            // find out the map_calculation
             $map_calculation = \common\models\Config::getConfig('map_calculation');
             if ($map_calculation == 0){
 
               ?>
               <script type="text/javascript">
-              // set varible for map calculation
+              // full postcode
               var map_cal = "0";
               </script>
-              <?=Html::tag('p','Town or city* <small style=\'color:blue;\'>(please select the correct city/town)</small>',['class'=>'detitle'])?>
-              <!-- <?=Html::dropdownlist('shipment[shipment_postcode]',$shipment['shipment_postcode'],getShipmentPostcode(),['class'=>'form-control','style'=>'width:100%;'])?> -->
-              <?=Html::activeDropdownlist($model,'shipment_city',getShipmentPostcode(),['class'=>'form-control','style'=>'width:100%;'])?>
+
+
+
               <p class="detitle">Postcode* <span style="color:blue;"><small>(please fill in the correct postcode)</small></span></p>
               <p>
 
@@ -127,7 +128,7 @@ use yii\bootstrap\ActiveForm;
 
             } elseif ($map_calculation == 1){ ?>
               <script type="text/javascript">
-              // set varible for map calculation
+              // first 3 postcodes only
               var map_cal = "1";
               </script>
 
@@ -140,28 +141,28 @@ use yii\bootstrap\ActiveForm;
                 <?=Html::activeTextInput($model,'shipment_postcode2',['class'=>'post-input','placeholder'=>'last 3 characters','style'=>'text-transform:uppercase','maxlength'=> 3])?>
               </p>
 
-              <?php    }; ?>
-              <p>
-                <?=Html::checkBox('SignupForm[policy]')?>
-                <span class="send-note2">I accept the <?=Html::a('Terms and conditions',['/site/page' ,'page_id'=>'terms'])?>, <?=Html::a('Privacy Policy',['/site/page' ,'page_id'=>'Privacy'])?> and <?=Html::a('Cookies Policy*',['/site/page','page_id'=>'cookies'])?></span>
-              </p>
-              <?php if(isset($model->getErrors('policy')['0'])):?>
-                <p style="color:red;">Please accept our policy before continue</p>
-              <?php endif;?>
-              <p class="continue-btn" onClick="myFunction()" style="cursor:pointer;text-align:center;">Register</p>
-              <button id="submitSignUp" style="display:none;" type="submit" value="Continue" name="delogin" class="continue-btn">Register</button>
-              <p>
-                <?=Html::activeCheckBox($model,'rememberMe')?>
-                <span class="send-note2">(Stay logged in)</span></p>
-                <!-- <p class="add-feedback pageback">[-]Page Feedback</p> -->
-                <?php ActiveForm::end(); ?>
-              </div><!-- sign-form -->
-            </div><!-- middle-content -->
-          </div><!-- row -->
+            <?php    }; ?>
+            <p>
+              <?=Html::checkBox('SignupForm[policy]')?>
+              <span class="send-note2">I accept the <?=Html::a('Terms and conditions',['/site/page' ,'page_id'=>'terms'])?>, <?=Html::a('Privacy Policy',['/site/page' ,'page_id'=>'Privacy'])?> and <?=Html::a('Cookies Policy*',['/site/page','page_id'=>'cookies'])?></span>
+            </p>
+            <?php if(isset($model->getErrors('policy')['0'])):?>
+              <p style="color:red;">Please accept our policy before continue</p>
+            <?php endif;?>
+            <p class="continue-btn" onClick="myFunction()" style="cursor:pointer;text-align:center;">Register</p>
+            <button id="submitSignUp" style="display:none;" type="submit" value="Continue" name="delogin" class="continue-btn">Register</button>
+            <p>
+              <?=Html::activeCheckBox($model,'rememberMe')?>
+              <span class="send-note2">(Stay logged in)</span></p>
 
-        </section>
+              <?php ActiveForm::end(); ?>
+            </div><!-- sign-form -->
+          </div><!-- middle-content -->
+        </div><!-- row -->
 
-      </div><!-- container -->
+      </section>
 
-    </body>
-    </html>
+    </div><!-- container -->
+
+  </body>
+  </html>
