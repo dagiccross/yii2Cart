@@ -146,7 +146,7 @@ use common\models\Config;
   <?php if(!empty($list['payment']['card_fee'])):
     // 4信用卡手续费
     $total += $list['payment']['card_fee'];
-    echo '<p>Card Fee <span class="to-price"> '.sprintf("%.2f",$list['payment']['card_fee']).'</span></p>';
+    echo '<p>Service Charge <span class="to-price"> '.sprintf("%.2f",$list['payment']['card_fee']).'</span></p>';
 
   endif;?>
 
