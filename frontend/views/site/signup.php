@@ -14,13 +14,13 @@ use yii\bootstrap\ActiveForm;
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>sign up here to order</title>
-  <link rel="stylesheet" href="/frontend/web/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/frontend/web/css/style.css">
-  <link rel="stylesheet" href="/frontend/web/css/responsive.css">
-  <script src="/frontend/web/js/jquery-1.11.3.min.js"></script>
-  <script src="/frontend/web/js/bootstrap.min.js"></script>
-  <script src="/frontend/web/js/waimai.js"></script>
-  <script src="/frontend/web/js/signup.js"></script>
+  <link rel="stylesheet" href="<?php echo CSS_URL?>/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo CSS_URL?>/style.css">
+  <link rel="stylesheet" href="<?php echo CSS_URL?>/responsive.css">
+  <script src="<?php echo JS_URL?>/jquery-1.11.3.min.js"></script>
+  <script src="<?php echo JS_URL?>/bootstrap.min.js"></script>
+  <script src="<?php echo JS_URL?>/waimai.js"></script>
+  <script src="<?php echo JS_URL?>/signup.js"></script>
 </head>
 <body>
   <!-- Trigger the modal with a button -->

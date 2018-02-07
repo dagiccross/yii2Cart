@@ -1099,7 +1099,7 @@ addToHomescreen();
         <div class="col-sm-6 col-xs-6 right-le">
         <div class="right-l">
         <div class="right-i">
-        <img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/head-right1.png" />
+        <img src="'.IMG_URL.'/head-right1.png" />
         </div>
         <div class="right-t">
         <p>
@@ -1112,7 +1112,7 @@ addToHomescreen();
         <div class="col-sm-6 col-xs-6 right-ri">
         <div class="right-r">
         <div class="right-i">
-        <img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/head-right2.png" />
+        <img src="'.IMG_URL.'/head-right2.png" />
         </div>
         <div class="right-t">
         <p>
@@ -1123,7 +1123,7 @@ addToHomescreen();
         </div>
         </div>
         <div class="col-sm-12 rihgt-b">
-        <a href="http://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/head-right3.png" /></a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="'.IMG_URL.'/head-right3.png" /></a>
         </div>
         </div>
         </div>';
@@ -1190,7 +1190,7 @@ addToHomescreen();
         $worldpayID .= $worldpay['options']['instId'];
         $worldpayStatus = $worldpay['status'];
 
-        $worldpayFullJS = '<a class="visible-xs" href="http://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/fb-large.png" /></a>
+        $worldpayFullJS = '<a class="visible-xs" href="https://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="'.IMG_URL.'/fb-large.png" /></a>
         <br /><center><script language="JavaScript" src="https://secure.worldpay.com/wcc/logo?instId='.$worldpayID.'"></script></center>';
 
         echo '<p>'.$company_name.' © '.date("Y").' All Rights Reserved</p>';
@@ -1198,8 +1198,8 @@ addToHomescreen();
         $footer = getPageByKey('footer');
         echo showContent($footer['content']);
 
-        $basicFooter = '<a class="visible-xs" href="http://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/fb-large.png" /></a>
-        <span><img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/visa.png" /></span> <span><img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/code.png" /></span>';
+        $basicFooter = '<a class="visible-xs" href="https://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="'.IMG_URL.'/fb-large.png" /></a>
+        <span><img src="'.IMG_URL.'/visa.png" /></span> <span><img src="'.IMG_URL.'/code.png" /></span>';
         // IF CASH ONLY, COMMENT THIS ABOVE
         // $basicFooter = '<span>We Accept Cash Only, </span>';
 
@@ -1213,7 +1213,7 @@ addToHomescreen();
         <div class="col-sm-6 col-xs-6 right-le">
         <div class="right-l">
         <div class="right-i">
-        <img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/head-right1.png" />
+        <img src="'.IMG_URL.'/head-right1.png" />
         </div>
         <div class="right-t">
         <p style="font-size:14px;">
@@ -1228,7 +1228,7 @@ addToHomescreen();
         <div class="col-sm-6 col-xs-6 right-ri">
         <div class="right-r">
         <div class="right-i">
-        <img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/head-right2.png" />
+        <img src="'.IMG_URL.'/head-right2.png" />
         </div>
         <div class="right-t">
         <p style="font-size:14px;">
