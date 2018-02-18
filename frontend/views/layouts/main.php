@@ -60,6 +60,7 @@ $delivery_time = \common\models\Config::getConfig('Delivery_Time');
   <!-- STARTS Logo adds -->
   <link rel="shortcut icon" href="/uploads/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="/uploads/192.png">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <!-- ENDS Logo adds -->
@@ -1078,8 +1079,7 @@ addToHomescreen();
 </head>
 <body>
   <?php $this->beginBody() ?>
-  <div class="container-fluid home">
-    <div class="container">
+
       <header>
 
 
@@ -1093,77 +1093,79 @@ addToHomescreen();
         $collection_time = \common\models\Config::getConfig('Collection_Time');
         $delivery_time = \common\models\Config::getConfig('Delivery_Time');
 
-        echo showContent($header['content']);
-        echo '<div class="col-sm-5 col-xs-12">
-        <div class="row" id="deliver">
-        <div class="col-sm-6 col-xs-6 right-le">
-        <div class="right-l">
-        <div class="right-i">
-        <img src="'.IMG_URL.'/head-right1.png" />
-        </div>
-        <div class="right-t">
-        <p>
-        Collection Time
-        </p>
-        <p>'.$collection_time.'</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-6 col-xs-6 right-ri">
-        <div class="right-r">
-        <div class="right-i">
-        <img src="'.IMG_URL.'/head-right2.png" />
-        </div>
-        <div class="right-t">
-        <p>
-        Delivery Time
-        </p>
-        <p>'.$delivery_time.'</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-12 rihgt-b">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="'.IMG_URL.'/head-right3.png" /></a>
-        </div>
-        </div>
-        </div>';
+        // echo showContent($header['content']);
         ?>
-        <div class="clearfix"></div>
-      </header>
-
-      <nav class="navbar navbar-default navbar-my">
-        <div class="">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <div class="info-title"><?= isset($this->context->menuinfo) ? $this->context->menuinfo : '';?></div>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1">
-            <?= Menu::widget(['type'=>'top']) ?>
-          </div><!-- /.navbar-collapse -->
-          <div class="row head-top">
-            <?php if(\Yii::$app->user->isGuest):?>
-              <?=Html::tag('div',Html::a('Sign up',['/site/signup'],['target'=>'_self']),['class'=>'sign-r'])?>
-              <?=Html::tag('div',Html::a('Login',['/site/login']),['class'=>'login-l'])?>
-            <?php else:?>
-
-              <?=Html::tag('div',Html::a('Logout',['/site/logout']),['class'=>'login-l','data-method'=>"post"])?>
-              <?=Html::tag('div',Html::a('My Account',['/member/default/index']),['class'=>'sign-r'])?>
-              <?=Html::tag('div',Html::a('Hello,  '.\Yii::$app->user->identity->username,['/member/default/index']),['class'=>'wel-user'])?>
-            <?php endif;?>
-          </div>
-        </div><!-- /.container-fluid -->
-      </nav>
-    </div>
+<div class="hidden-xs" style="background-color:#333333; text-align: right;">
+  <div class="list-inline">
+    <div class="btn btn-link a-link"><a href="javascript:;" class="delivery-information">Delivery Information</a></div>
+    <div class="btn btn-link a-link"><a href="javascript:;" class="open-time">Opening Times</a></div>
+    <div class="btn btn-link a-link"><a href="javascript:;" class="alertgy-dietary">Allergy Information</a></div>
+    <div class="btn btn-link a-link"><a href="uploads/menu.pdf" target="_blank">Menu Download</a></div>
   </div>
+</div>
+
+
+</header>
+<div class="visible-sm visible-md visible-lg hidden-xs" style="background: linear-gradient(to bottom right, #ff0000 0%, #ff6666 100%); padding:9px; height:50px;">
+<?php echo '<div class="company_name pull-left"><a href="index.php">'.$company_name.'</a></div>'; ?>
+<!-- login | sign up -->
+<div class="pull-right">
+  <!-- not yet logged in -->
+  <?php if(\Yii::$app->user->isGuest):?>
+
+    <div class="btn btn-link a-link"><a href="/index.php?r=site%2Flogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></div>
+    <div class="btn btn-link a-link"><a href="/index.php?r=site%2Fsignup" target="_self"><span class="glyphicon glyphicon-user"></span> Sign Up</a></div>
+
+    <div style="float:right;">
+      <?php echo '<a href="https://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://milpo.co.uk/frontend/web/images/share.png" width="100px;" /></a>'; ?>
+    </div>
+  <?php else:?>
+
+    <!-- logged in  -->
+    <div class="btn btn-link a-link"><a href="/index.php?r=member%2Fdefault%2Findex"><span class="glyphicon glyphicon-log-in"></span> My Account</a></div>
+    <div class="btn btn-link a-link"><a href="/index.php?r=site%2Flogout" target="_self"><span class="glyphicon glyphicon-user"></span> Logout</a></div>
+
+    <div style="float:right;">
+      <?php echo '<a href="https://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://milpo.co.uk/frontend/web/images/share.png" width="100px;" /></a>'; ?>
+    </div>
+  <?php endif;?>
+</div>
+
+</div>
+
+<!-- navBar for mobile-->
+<nav class="[ navbar ][ navbar-bootsnipp animate ]" role="navigation">
+<div class="[ container ]">
+  <div style="background: linear-gradient(to bottom right, #ff0000 0%, #ff6666 100%);" class="hidden-sm hidden-md hidden-lg navbar-header">
+    <a class="navbar-brand" style="font-size:30px; color:white; font-family: 'Patua One', cursive;" href="/index.php"><?php echo $company_name; ?></a>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span style="background-color: white;" class="icon-bar"></span>
+      <span style="background-color: white;" class="icon-bar"></span>
+      <span style="background-color: white;" class="icon-bar"></span>
+    </button>
+
+  </div>
+  <div class="collapse navbar-collapse navColor" id="myNavbar">
+
+
+    <?= Menu::widget(['type'=>'top']) ?>
+
+    <ul class="nav navbar-nav navbar-right">
+
+      <?php if(\Yii::$app->user->isGuest):?>
+        <li class="hidden-sm hidden-md hidden-lg"><a href="/index.php?r=site%2Fsignup" target="_self"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li class="hidden-sm hidden-md hidden-lg"><a href="/index.php?r=site%2Flogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <?php else:?>
+        <li class="hidden-sm hidden-md hidden-lg"><a href="/index.php?r=member%2Fdefault%2Findex"><span class="glyphicon glyphicon-log-in"></span> My Account</a></li>
+        <li class="hidden-sm hidden-md hidden-lg"><a href="/index.php?r=site%2Flogout" target="_self"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+      <?php endif;?>
+
+    </ul>
+  </div>
+</div>
+</nav>
+<!-- ends navBar for mobile -->
+
   <div class="container">
     <div class="wrap">
 
@@ -1179,94 +1181,63 @@ addToHomescreen();
       </div>
     </div>
     <footer>
-      <div class="container">
+    <div class="container">
 
-        <?php
-        // $worldpay = getExtdata('worldpay','account')['status'];
-        $worldpay = getExtdata('worldpay','account');
-        //  echo '<pre>'; print_r($worldpay); echo '</pre>';
+      <?php
+      // $worldpay = getExtdata('worldpay','account')['status'];
+      $worldpay = getExtdata('worldpay','account');
+      //  echo '<pre>'; print_r($worldpay); echo '</pre>';
 
-        $worldpayID = $worldpay['options'][1]['value'];
-        $worldpayID .= $worldpay['options']['instId'];
-        $worldpayStatus = $worldpay['status'];
+      $worldpayID = $worldpay['options'][1]['value'];
+      $worldpayID .= $worldpay['options']['instId'];
+      $worldpayStatus = $worldpay['status'];
 
-        $worldpayFullJS = '<a class="visible-xs" href="https://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="'.IMG_URL.'/fb-large.png" /></a>
-        <br /><center><script language="JavaScript" src="https://secure.worldpay.com/wcc/logo?instId='.$worldpayID.'"></script></center>';
+      $worldpayFullJS = '<a class="visible-xs" href="http://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/fb-large.png" /></a>
+      <br /><center><script language="JavaScript" src="https://secure.worldpay.com/wcc/logo?instId='.$worldpayID.'"></script></center>';
 
-        echo '<p>'.$company_name.' © '.date("Y").' All Rights Reserved</p>';
-        echo '<p>'.$company_add.', '.$company_city.', '.$company_postcode.'</p>';
-        $footer = getPageByKey('footer');
-        echo showContent($footer['content']);
+      echo '<p>'.$company_name.' © '.date("Y").' All Rights Reserved</p>';
+      echo '<p>'.$company_add.', '.$company_city.', '.$company_postcode.'</p>';
+      $footer = getPageByKey('footer');
+      echo showContent($footer['content']);
 
-        $basicFooter = '<a class="visible-xs" href="https://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="'.IMG_URL.'/fb-large.png" /></a>
-        <span><img src="'.IMG_URL.'/visa.png" /></span> <span><img src="'.IMG_URL.'/code.png" /></span>';
-        // IF CASH ONLY, COMMENT THIS ABOVE
-        // $basicFooter = '<span>We Accept Cash Only, </span>';
+      $basicFooter = '<a class="visible-xs" href="http://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/fb-large.png" /></a>
+      <span><img style="padding-left:5px;" src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/visa.png" /></span> <span><img style="padding-top: 6px;padding-left:5px;" src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/code.png" /></span>';
+      // IF CASH ONLY, COMMENT THIS ABOVE
+      // $basicFooter = '<span>We Accept Cash Only, </span>';
 
 
-        echo '<div class="moblie-mid">
-        <a href="javascript:;" style="padding:6px;text-align:center;color:black;font-weight:700;" class="delivery-information btn-info">Delivery Information</a> <a href="javascript:;" style="padding:6px;text-align:center;color:black;font-weight:700;" class="open-time btn-info">Opening Times</a> <a href="javascript:;" style="padding:6px;text-align:center;color:black;font-weight:700;" class="alertgy-dietary btn-info">Allergy &amp; Dietary Information</a>
-        <a href="uploads/menu.pdf" style="padding:6px;text-align:center;color:black;font-weight:700;" class="btn btn-info" target="_blank">Download Menu</a>
-        <div class="row">
-        <div class="col-sm-5 col-xs-12">
-        <div class="row">
-        <div class="col-sm-6 col-xs-6 right-le">
-        <div class="right-l">
-        <div class="right-i">
-        <img src="'.IMG_URL.'/head-right1.png" />
-        </div>
-        <div class="right-t">
-        <p style="font-size:14px;">
-        Collection Time
-        </p>
-        <p style="font-size:14px;">
-        '.$collection_time.'
-        </p>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-6 col-xs-6 right-ri">
-        <div class="right-r">
-        <div class="right-i">
-        <img src="'.IMG_URL.'/head-right2.png" />
-        </div>
-        <div class="right-t">
-        <p style="font-size:14px;">
-        Delivery Time
-        </p>
-        <p style="font-size:14px;">
-        '.$delivery_time.'
-        </p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="foot-bottom">
-        <div class="fot-l">';
+      echo '<div class="moblie-mid">
+      <a href="javascript:;" style="padding:6px;text-align:center;color:black;font-weight:700;" class="delivery-information btn-info">Delivery Information</a>
+      <a href="javascript:;" style="padding:6px;text-align:center;color:black;font-weight:700;" class="open-time btn-info">Opening Times</a>
+      <a href="javascript:;" style="padding:6px;text-align:center;color:black;font-weight:700;" class="alertgy-dietary btn-info">Allergy &amp; Dietary Information</a>
+      <a href="uploads/menu.pdf" style="padding:6px;text-align:center;color:black;font-weight:700;" class="btn-info" target="_blank">Menu Download</a>
 
-        if ($worldpayStatus == 0){
-          echo $basicFooter;
-        }elseif ($worldpayStatus == 1) {
-          echo $worldpayFullJS;
-        };
 
-        echo '</div>
-        <div class="fot-r">
-        <p>Powered by Milpo Technologies<br/> <a href="http://www.milpo.co.uk" target="_blank">www.milpo.co.uk</a></p>
-        </div>
-        <div class="clearfix">
-        </div>
-        </div>
-        </div>
-        </footer>';
-        ?>
-        <?php
-        // var_dump(Config::getAllConfig());
-        ?>
-        <?php $this->endBody() ?>
+      </div>
+      <div class="foot-bottom">
+      <div class="fot-l">';
+
+      if ($worldpayStatus == 0){
+        echo $basicFooter;
+      }elseif ($worldpayStatus == 1) {
+        echo $worldpayFullJS;
+      };
+
+      echo '</div>
+      <div class="fot-r">
+
+      Powered by Milpo Technologies, <a href="http://www.milpo.co.uk" target="_blank">www.milpo.co.uk</a>
+      </div>
+      <div class="clearfix">
+      </div>
+      </div>
+      </div>
+      </footer>';
+      ?>
+      <?php
+      // var_dump(Config::getAllConfig());
+      ?>
+      <?php $this->endBody() ?>
         <!-- alert -->
 
         <div style="" id="alert_all" class="fade modal in" role="dialog" tabindex="-1">
