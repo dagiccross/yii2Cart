@@ -12,7 +12,7 @@ use common\models\Config;
 <section class="main">
   <div class="col-sm-3 home-menu">
     <div id="home-menu-left">
-      <div class="leftsec-top hidden-xs"><?=Html::a(Html::img(IMG_URL.'/download-btn.png'),$this->context->getConfig('downloadpdf'),['target'=>'_blank'])?></div>
+
 
       <div class="menu-down">
         <?= Menu::widget(['type'=>'side']) ?>
@@ -117,7 +117,7 @@ use common\models\Config;
 <style>
 /*.home-right{width: 300px;}*/
 .home-menu,.home-right{transition: all 1s ease 0s;}
-.back-top {display:none;background: #FFD800 none repeat scroll 0% 0%;border: medium none; text-align: center; position: fixed; right: 30px; bottom: 10%; border-radius: 22px; width: 45px; height: 45px; line-height: 6px; padding-top: 3px; text-transform: capitalize; font-weight: 900; font-size: 12px;z-index: 1;}
+.back-top {display:none;background:#ffc64e none repeat scroll 0% 0%;border: medium none; text-align: center; position: fixed; right: 30px; bottom: 10%; border-radius: 22px; width: 45px; height: 45px; line-height: 6px; padding-top: 3px; text-transform: capitalize; font-weight: 900; font-size: 12px;z-index: 1;}
 .back-top a {color: #000;}
 .back-top span {font-size: 23px;font-weight: bolder;}
 @media (max-width: 768px) {

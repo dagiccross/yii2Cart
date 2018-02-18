@@ -7,8 +7,7 @@ use common\models\Config;
 
 <section class="main">
   <div class="col-sm-3 home-menu">
-    <div class="leftsec-top hidden-xs"><?=Html::a(Html::img(IMG_URL.'/download-btn.png'),$this->context->getConfig('downloadpdf'),['target'=>'_blank'])?></div>
-
+  
     <div class="menu-down">
       <?= Menu::widget(['type'=>'side']) ?>
     </div>
