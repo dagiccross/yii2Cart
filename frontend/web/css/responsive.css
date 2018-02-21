@@ -682,3 +682,6 @@ div#deliver {
     margin-top: 8px;}
 
 }
+.navbar-bootsnipp .navbar-nav > li > a {
+	font-size: 16px;
+}
