@@ -1098,16 +1098,16 @@ addToHomescreen();
         ?>
         <div class="hidden-xs" style="background-color:#333333; text-align: right;">
           <div class="list-inline">
-            <div class="btn btn-link a-link"><a href="javascript:;" class="delivery-information">Delivery Information</a></div>
-            <div class="btn btn-link a-link"><a href="javascript:;" class="open-time">Opening Times</a></div>
-            <div class="btn btn-link a-link"><a href="javascript:;" class="alertgy-dietary">Allergy Information</a></div>
-            <div class="btn btn-link a-link"><a href="uploads/menu.pdf" target="_blank">Menu Download</a></div>
+            <div class="btn btn-link a-link"><a style="font-size:12px;" href="javascript:;" class="delivery-information">Delivery Information</a></div>
+            <div class="btn btn-link a-link"><a style="font-size:12px;" href="javascript:;" class="open-time">Opening Times</a></div>
+            <div class="btn btn-link a-link"><a style="font-size:12px;" href="javascript:;" class="alertgy-dietary">Allergy Information</a></div>
+            <div class="btn btn-link a-link"><a style="font-size:12px;" href="uploads/menu.pdf" target="_blank">Menu Download</a></div>
           </div>
         </div>
 
 
       </header>
-      <div class="visible-sm visible-md visible-lg hidden-xs" style="background: linear-gradient(to bottom right, #ff0000 0%, #ff6666 100%); padding:9px; height:50px;">
+      <div class="visible-sm visible-md visible-lg hidden-xs" style="background: rgb(255, 37, 37); padding:9px; height:50px;">
         <?php echo '<div class="company_name pull-left"><a href="index.php">'.$company_name.'</a></div>'; ?>
         <!-- login | sign up -->
         <div class="pull-right">
@@ -1138,7 +1138,7 @@ addToHomescreen();
       <!-- navBar for mobile-->
       <nav class="[ navbar ][ navbar-bootsnipp animate ]" role="navigation">
         <div class="[ container ]">
-          <div style="background: linear-gradient(to bottom right, #ff0000 0%, #ff6666 100%);" class="hidden-sm hidden-md hidden-lg navbar-header">
+          <div style="background: rgb(255, 37, 37);" class="hidden-sm hidden-md hidden-lg navbar-header">
             <a class="navbar-brand" style="font-size:30px; color:white; font-family: 'Patua One', cursive;" href="/index.php"><?php echo $company_name; ?></a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span style="background-color: white;" class="icon-bar"></span>
