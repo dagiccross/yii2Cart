@@ -240,17 +240,14 @@ button{outline: none;}
 			.soup-menu{display: block;}
 			.soup-menu li{font-size: 16px;margin: 10px 0;padding: 5px 0;}
 			.goods_discount{font-size: 13px}
-			.cut-num,.add-num{float: left;display: block;}
-			.cut-num{width: 20px;}
-			.add-num{width:26px;padding: 0 3px;}
-			.add-num>.add-btn{width: 20px;}
-			.order-name1{display: block;float: left;width: 140px;padding-right: 5px;}
-			/* .pre-price1{display: block;float: left;text-align: right;width: 42px;} */
-			.cut-button{    display: block;width: 20px;height: 20px;border-radius: 12px;font-size: 20px;font-weight: 900;line-height: 6px;border: 2px solid #999;background-color: #fff;color: #999; padding-bottom: 3px;}
+
+
+
+
 			.checkout-button{border: none; background: #ffc64e;text-align: center;border-radius: 5px; width: 100%;padding: 10px; color: #000; font-size: 18px;font-weight: 600;}
 			.cut-button:hover{border-color:#696868; }
 			.checkout-button:hover{background:rgba(243, 196, 97, 0.8);}
-			.orderoption {padding-left: 46px;}
+
 
 
 			/* booking*/
@@ -557,45 +554,106 @@ button{outline: none;}
 
 					}
 
-					/*mobile basket*/
-					/* When window is less than 768px */
-					@media (max-width: 767px) {
-						.order-menu {
-							max-height: 100% !important;
-						}
+					/* STARTS basket template */
+					.cut-num{width: 10%;min-width: 20px;}
+					.add-num{width:10%; padding: 0 3px;min-width: 20px;}
+					.cut-num,.add-num{float: left;display: block;}
+					/* .add-num>.add-btn{width: 10%;} */
+					.order-name1{display: block;float: left;padding-right: 5px;}
+					.orderoption {padding-left: 20%;}
+					.pre-price1{display: block;float: left;text-align: right;}
+					.cut-button{
+						display: block;
+						width: 10%;
+						min-width: 20px;
+						height: 20px;
+						border-radius: 12px;
+						font-size: 20px;
+						font-weight: 900;
+						line-height: 6px;
+						border: 2px solid #999;
+						background-color: #fff;
+						color: #999;
+						padding-bottom: 3px;
+					}
+
+
+					/*==========  Mobile First Method  ==========*/
+
+					/* Custom, iPhone Retina */
+					@media only screen and (min-width : 320px) {
 						.order-name1 {
-							width: auto;
-							font-size: 14px;
+							width: 50%;
 						}
 						.pre-price1 {
 							float: right;
-							margin-right: 20px;
+							padding-right: 20px;
 							font-size: 14px;
+							margin-right: 20px;
+							width: 17%;
 						}
 					}
 
-					/*ipad mini size basket*/
-					/* When window is over 768px */
-					@media (min-width: 768px) {
-						.order-menu {
-						}
+					/* Extra Small Devices, Phones */
+					@media only screen and (min-width : 480px) {
+					
+					}
+
+					/* Small Devices, Tablets */
+					@media only screen and (min-width : 768px) {
+
+					}
+
+					/* Medium Devices, Desktops */
+					@media only screen and (min-width : 992px) {
 						.order-name1 {
+							width: 60%;
 						}
 						.pre-price1 {
+							float: right;
+							padding-right: 20px;
+							font-size: 14px;
+							margin-right: 20px;
+							width: 10%;
+						}
 
-						}
 					}
-					/*ipad size basket*/
-					/* When window is over 992px */
-					@media (min-width: 992px) {
-						.order-menu {
-						}
-						.order-name1 {
-						}
-						.pre-price1 {
 
-						}
+					/* Large Devices, Wide Screens */
+					@media only screen and (min-width : 1200px) {
+
 					}
+
+
+
+					/*==========  Non-Mobile First Method  ==========*/
+
+					/* Large Devices, Wide Screens */
+					@media only screen and (max-width : 1200px) {
+
+					}
+
+					/* Medium Devices, Desktops */
+					@media only screen and (max-width : 992px) {
+
+					}
+
+					/* Small Devices, Tablets */
+					@media only screen and (max-width : 768px) {
+
+					}
+
+					/* Extra Small Devices, Phones */
+					@media only screen and (max-width : 480px) {
+
+					}
+
+					/* Custom, iPhone Retina */
+					@media only screen and (max-width : 320px) {
+
+					}
+
+					/* ENDS basket template */
 
 					/*member*/
 
